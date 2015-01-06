@@ -1,0 +1,238 @@
+{
+	"body_class": "home",
+	"title": "Unique Lending Options",
+	"template": "main",
+	"navigationURL": "/",
+	"pageHeadline": "Unique Lending Options",
+	"pageHeadlineCopy": "Unique Lending Options",
+	"featuredHomes": [
+		{
+			"picture": "images/featuredhomes/490 Upper Lavista.jpg",
+			"name": "490 Upper Lavista CT NW<br>Salem, OR 97304",
+			"rooms": "3",
+			"bathrooms": "3",
+			"size": "1,551 sq ft",
+			"price": "$180,000"
+		},
+		{
+			"picture": "images/featuredhomes/2969 W 8th St.jpg",
+			"name": "2969 W 6th St<br>Washougal, WA 98671",
+			"rooms": "4",
+			"bathrooms": "4",
+			"size": "3,201 sq ft",
+			"price": "$534,900"
+		},
+		{
+			"picture": "images/featuredhomes/9119 Sw Washington Dr.jpg",
+			"name": "9119 SW Washington Dr<br>Tigard, OR 97223",
+			"rooms": "3",
+			"bathrooms": "2",
+			"size": "1,509 sq ft",
+			"price": "$344,800"
+		},
+		{
+			"picture": "images/featuredhomes/490 Upper Lavista.jpg",
+			"name": "16834 NE Pacific Dr<br>Portland, OR 97230",
+			"rooms": "3",
+			"bathrooms": "2.5",
+			"size": "1,995 sq ft",
+			"price": "n/a"
+		},
+		{
+			"picture": "images/featuredhomes/15908 Ne 92nd St.jpg",
+			"name": "15908 NE 92nd St<br>Vancouver, WA 98682",
+			"rooms": "3",
+			"bathrooms": "2.5",
+			"size": "1,906 sq ft",
+			"price": "$240,000"
+		},
+		{
+			"picture": "images/featuredhomes/490 Upper Lavista.jpg",
+			"name": "490 Upper Lavista CT NW<br>Salem, OR 97304",
+			"rooms": "4",
+			"bathrooms": "2.5",
+			"size": "2,324 sq ft",
+			"price": "$360,000"
+		}
+	],
+	"programs": [
+		{
+			"title": "Rent to Own Homes on the MLS!",
+			"text": "Through the MAP1 program, you can get into the home of your choice today and work to qualify for a traditional home loan in the future."
+		},
+		{
+			"title": "FHA Loan",
+			"text": "Federal Housing Administration loans are easier to qualify with lower credit score requirements, higher acceptable debt to income and lower downpayments!"
+		},
+		{
+			"title": "1/2% Down Payment Deposit",
+			"text": "InterCap’s proprietary program allows borrowers to put down as low as ½% towards the value of a home."
+		}
+	]	
+}
+
+<div class="call-to-action-bin">
+<a id="get_started" class="nav-target"></a>
+	<div class="page-content">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="callout">
+					<h1>We help home buyers who have had difficulty getting traditional mortgages to purchase and live in the home of their dreams!</h1>
+				</div>
+				<div class="callout">
+					<p>If you have less than ideal credit, need down payment assistance or have had a foreclosure, short sale or bankruptcy we have programs designed specifically to help (special terms and restrictions apply), find out if you qualify!</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#contact_us" class="scroll-link">
+					<button class="submit-button">Get Started Now</button>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="programs-bin">
+	<div class="row">
+		<div class="page-content">
+			<div class="box-bin center">
+				<div class="page-title">
+					<h1>Programs You May Qualify For</h1>
+					<div class="title-dash"></div>
+					
+				</div>
+				<div class="row">
+					{{~ it.programs :p}}
+						<div class="col-md-4">
+						<div class="column">
+							<h3>{{= p.title}}</h3>
+							<p>{{= p.text}}</p>
+							<button class="submit-button">See If You Qualify</button>
+						</div>
+						</div>
+					{{~}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="featured-properties-bin">
+	<a id="featured_properties" class="nav-target"></a>
+	<div class="row center">
+		<div class="page-content">
+			<div class="box-bin">
+			<div class="page-title">
+				<h1>Featured Properties</h1>
+				<div class="title-dash"></div>
+			</div>
+			<div class="featured-homes-bin">
+				<div class="row slick-carousel">
+					{{~ it.featuredHomes :featuredhome }}
+						<div class="col-md-4 featured-home-bin">
+							<div class="column">
+							<div class="image"><img src="{{= featuredhome.picture}}" /></div>
+							<h3>{{= featuredhome.name}}</h3>
+							<p>Rooms: <span class="value">{{= featuredhome.rooms}}</span> | Bathrooms: <span class="value">{{= featuredhome.bathrooms}}</span></p>
+							<p>Size: <span class="value">{{= featuredhome.size}}</span> | Price: <span class="value">{{= featuredhome.price}}</span></p>
+							<div class="button-bin">
+							<button class="submit-button">Get Details</button>
+							</div>
+							</div>
+						</div>
+					{{~}}
+				</div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
+<div class="about-us-bin">
+<a id="about_us" class="nav-target"></a>
+	<div class="row">
+		<div class="page-content">
+			<div class="box-bin center">
+				<div class="page-title">
+					<h1>About Us</h1>
+					<div class="title-dash"></div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-4"><div class="sprite sprite-Header-unique-LOGO"></div></div>
+						<div class="col-md-8">
+						<p>With integrity and intelligence, Intercap has distinguished itself as a careful but effective lender, loan service and securitization specialist. Since 1978 we have served the residential lending needs of our communities. Intercap Lending is a DBA of Suburban Mortgage Company of New Mexico, and our mission is to provide affordable home ownership opportunities while earning the trust of our employees, borrowers, realtors, builders and affinity partners.</p>
+						<p>Intercap Lending, with corporate offices in Aliso Viejo, California, is a direct Fannie Mae, Freddie Mac and Ginnie Mae seller, servicer and issuer. Less than 1% of lenders nationwide have these three key investor approvals.</p>
+						<p>Intercap Lending succeeds by delivering the service, products, and pricing that our competitors can't.</p>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="contact-us-bin">
+	<a id="contact_us" class="nav-target"></a>
+	<div class="row">
+		<div class="page-content">
+			<div class="box-bin">
+			<div class="page-title">
+					<h1>Contact Us</h1>
+					<div class="title-dash"></div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="heading">
+							<h2>Available 24/7</h1>
+							
+						</div>
+						<div class="form">
+							<label for="first_name" class="label-name"id="label_first_name">First Name*</label><br>
+							<input type="text" name="firstname"><br>
+							<label for="last_name" class="label-name"id="label_last_name">Last Name*</label><br>
+							<input type="text" name="lastname"><br>
+							<label for="email_name" class="label-name"id="label_email_name">Email*</label><br>
+							<input type="text" name="lastname"><br>
+							<label for="message" class="label-name"id="label_message">Message*</label><br>
+							<textarea name="lastname" rows="3"></textarea><br>
+							<input type="submit" class="submit-button">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="heading">
+							<h2>Company Information</h1>
+							<ul>
+								<li>
+									<p>
+										<strong>Phone:</strong> 1-866-644-1046
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Email:</strong> <a href="mailto:support@intercaplending.com">support@intercaplending.com</a>
+									</p>
+								</li>
+								<li>
+									<p>
+										<strong>Address:</strong> <a href="https://www.google.com/maps/place/26880+Aliso+Viejo+Pkwy+%23100,+Aliso+Viejo,+CA+92656,+USA/@33.5724702,-117.7294604,17z/data=!4m2!3m1!1s0x80dcef53c496dbb1:0xf7ae792dc3a55a3" target="_blank">26880 Aliso Viejo, Suite 100 <br>Aliso Viejo CA 92656</a>
+									</p>
+								</li>
+							</ul>
+						</div>
+							<a href="https://www.google.com/maps/place/26880+Aliso+Viejo+Pkwy+%23100,+Aliso+Viejo,+CA+92656,+USA/@33.5724702,-117.7294604,17z/data=!4m2!3m1!1s0x80dcef53c496dbb1:0xf7ae792dc3a55a3" target="_blank">
+								<div class="sprite sprite-Contact-map"></div>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
